@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입사지원서</title>
+</head>
+<body>
+     <!-- 표를 작성하는데 제일 부모 태그 -->
+    <!-- 
+    ul태그로 예를들어 ul태그안에 li태그를 감싸고있는 ul태그가 li태그에 부모이다.    
+    li태그는 ul태그의 자식이다-->
+     <ul>
+        <li></li>
+    </ul>
+    <!-- 테이블에 border-collaps 속성을 추가하면 떨어져있던 선이 겹쳐진다. -->
+    <table style="width:100%; border-collapse: collapse;">
+        <!-- caption 태그로 테이블의 이름을 작성해준다. -->
+        <caption>
+            입사지원서
+        </caption>
+        <br>
+        
+        
+        <!-- column의 줄임말,열,세로줄-->
+        <col style="width: 50px;">
+        <col style="width: 100px;">
+        <col style="width: 200px;">
+        <col style="width: 200px;">
+        <col style="width: 200px;">
+     <tr>
+        <!-- 테이블 제일 위의 이름 테이블 해더 -->
+        <!-- border 테두리를 바꿔줄수 있는 속성 첫번째 선의 굵기 두번째 선의 타입 
+        테두리의 색 -->
+        <!-- text-align: center 속성을 주면 텍스트가 중앙 -->
+        <th style="border : 1px solid rgb(185, 26, 26)" >번호</th>
+        <th style="border : 1px solid black">학교명</th>
+        <th style="border : 1px solid black">재학기간</th>
+        <th style="border : 1px solid black">전공</th>
+        <th style="border : 1px solid black">주간/야간</th>
+        <th style="border : 1px solid black">소재지</th>
+     </tr>
+      <tr>
+        <th style="border : 1px solid">1</th>
+        <td style="border : 1px solid">신근호</td>
+        <td style="border : 1px solid">24</td>
+        <td style="border : 1px solid">남</td>
+        <td style="border : 1px solid">한국</td>
+      </tr>
+      <!-- rowspan 속성은 세로로 병합을 시켜준다. -->
+      <tr>
+        <th style="border : 1px solid">2</th>
+        <td style="border : 1px solid">신근호</td>
+        <td style="border : 1px solid">24</td>
+        <td style="border : 1px solid">남</td>
+        <td rowspan="3" style="border : 1px solid ">한국</td>
+      </tr>
+      <!-- colspan 속성은 가로로 병합을 시켜준다. -->
+      <tr>
+        <th style="border : 1px solid">3</th>
+        <td style="border : 1px solid">신근호</td>
+        <td style="border : 1px solid">24</td>
+        <td style="border : 1px solid">남</td>
+
+      </tr>
+    </table>
+</body>
+</html>
